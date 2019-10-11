@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Echo Demo for WebSockets</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="page-wrapper">
+		<h1>Echo Demo for WebSockets</h1>
+
+		<div id="status">Connecting to the server...</div>
+
+		<ul id="messages"></ul>
+
+		<form id="message-form" action="#" method="post">
+			<textarea id="message" placeholder="Write your message here..." required></textarea>
+			<button type="submit">Send Message</button>
+            <button type="button" id="close">Close Connection</button>
+        </form>
+    </div>
+
+    <div class="page-wrapper page-wrapper-instructions">
+            <div class="instructions">
+                    <h1>Instructions</h1>
+                    <p>To see the how WebSockets work in more detail, follow these steps in Chrome.</p>
+                    <ol>
+                        <li>Type your message in the text field.</li>
+                        <li>Press 'Send Message'</li>
+                        <li>Open dev tools (F12)</li>
+                        <li>Navigate to the 'Network' tab.</li>
+                        <li>Click on the 'echo.websockets.org file.</li>
+                        <li>Click on the 'Messages' tab to see the echo.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+	<script src="app.js"></script>
+</body>
+</html>
