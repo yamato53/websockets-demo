@@ -50,7 +50,7 @@ window.onload = function() {
 
     // Alert the user that the websocket connection is now closed
     socket.onclose = (event) => {
-        socketStatus.innerHTML = 'Discconected from the WebSocket server.';
+        socketStatus.innerHTML = 'Disconnected from the WebSocket server.';
         socketStatus.className = 'closed';
     };
 
